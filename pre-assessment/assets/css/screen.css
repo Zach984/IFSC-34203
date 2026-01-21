@@ -77,6 +77,42 @@ body {
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
+/*Now I chose that water droplet one which is just greyscale colors, so like I randomly clicked throughout the picture on a color picker...?
+	Hope that works for ya!*/
+
+#content a:hover {
+	color:green;
+}
+#content h2 {
+	color: #959595;
+}
+#content h3 {
+	color: #181818;
+}
+#content h4 {
+	color: #848484;
+}
+/* floating the image makes it like disobey any sort of rules i have...? I'm just gonna leave it because I have 0 clue how or even if I should fix it lol */
+#content img {
+	float: right;
+	border: 5px solid black;
+	margin: 5px
+	
+}
+#wordTitle {
+	font-weight: bold;
+	font-size:30px;
+	color: #30476b;
+	padding: 5px 5px 5px 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#wordDefinition {
+	margin-top: 5px;
+	margin-bottom: 15px;
+
+}
 #footer {
 	background-color: #000;
 	color: #FFF;
@@ -88,3 +124,25 @@ body {
 	margin-right: 20px;
 	margin-left: 20px;
 }
+/* This is me just copying the list stuff u have for the nav for the bottom? I think I'm over complicating things.... */
+#footer ul 
+{
+	list-style-type: none;
+	margin-left: 10px;
+}
+
+#footer ul li {
+	display: inline;
+	
+}
+
+#footerImg {
+	background-image: url("../img/waterdroppingfooter.jpg");
+	padding-bottom:100px;
+}
+/**/
+.alert{
+	background-color:#808080;
+	color:#FFF;
+}
+
