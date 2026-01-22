@@ -22,7 +22,9 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
-	
+	height: 140px;
+
+  background-image: url("../img/assessment-4Edit.jpg");
 
 }
 
@@ -33,9 +35,7 @@ body {
 #header a{
   display: block;
   
-  padding-bottom:70px;
-
-  background-image: url("../img/assessment-4Edit.jpg");
+  height: 140px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -91,6 +91,10 @@ body {
 }
 #content h4 {
 	color: #848484;
+}
+/*added this cuz i wanted to.*/
+#content h2,h3,h4 {
+	font-weight: bold;
 }
 /* floating the image makes it like disobey any sort of rules i have...? I'm just gonna leave it because I have 0 clue how or even if I should fix it lol */
 #content img {
