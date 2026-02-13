@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Fix Clearing Bugs */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+main {
+/* background-image: url("../img/grid.png"); */
+max-width:1140px;
+margin: 20px auto;
+border: 1px solid #000;  
+}
+
+header.primary, footer.primary{
+/*  width:920px; */
+ width:96.25%;
+ background: rgba(0, 0, 0, 0.4);
+ margin-left: 1.775%;
+ padding: 20px;
+ float: left; 
+}
+/*
+article {
+  margin-left: 1.775%;
+  width: 63.50%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  float: left;
+}
+ */
+
+ #primary {
+  margin-left: 1.775%;
+  width: 63.50%;
+  float: left;
+}
+
+article {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+aside {
+  background: rgba(0, 0, 0, 0.3);
+  width: 30.88%;
+  padding: 20px;
+  float: left;
+  margin-left: 1.775%;
+
+}
