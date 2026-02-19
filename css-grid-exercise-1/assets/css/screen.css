@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Fix Clearing Bugs */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+main {
+width:80vw;
+margin: 20px auto;
+border: 1px solid #000;  
+display:grid;  
+grid-template-columns: repeat(6, 1fr); 
+grid-template-rows:auto;  
+gap:20px;  
+padding:20px;  
+}
+
+header.primary{
+  background: rgba(0, 0, 0, 0.6);
+  grid-column: 1 / 7;
+  grid-row: 1 / 2
+}
+
+#content {
+  grid-column: 1 / 7;
+  grid-row: 2 / 3;
+  display:grid;
+  grid-template-columns:subgrid;
+  grid-template-rows:subgrid;
+}
+
+blog{
+  background: rgba(0, 0, 0, 0.6);
+  grid-column: 1/5;
+  grid-row:1/2;
+}
+
+aside{
+  background: rgba(0, 0, 0, 0.6);
+  grid-column: 5/7;
+  grid-row: 1/2;
+}
+
+footer.primary{
+  background: rgba(0, 0, 0, 0.6);
+  grid-column: 1 / 7;
+  grid-row: 3 / 4;
+}
+
+
+/*
+article {
+  margin-left: 1.775%;
+  width: 63.50%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  float: left;
+}
+ 
+
+ #primary {
+  margin-left: 1.775%;
+  width: 63.50%;
+  float: left;
+}
+
+article {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+aside {
+  background: rgba(0, 0, 0, 0.3);
+  width: 30.88%;
+  padding: 20px;
+  float: left;
+  margin-left: 1.775%;
+
+}
+*/
