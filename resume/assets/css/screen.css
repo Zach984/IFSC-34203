@@ -241,3 +241,25 @@ main h1:after {
   letter-spacing: 0.5px;
 }
 
+.job,
+.certificate {
+  border-bottom: 1px solid var(--accent-color-1);
+  padding-bottom: 20px;
+}
+
+.job *[itemprop="jobTitle"],
+.job *[itemprop="name"],
+.job *[itemprop="url"],
+.job *[itemprop="addressLocality"],
+.certificate *[itemprop="name"] {
+  display: block;
+}
+
+.job h3 {
+  margin: 20px 0 0 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
