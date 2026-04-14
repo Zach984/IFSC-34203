@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/screen.css">
+  </head>
+  <body>
+
+    <!-- grid row-->
+<div class="container text-center">
+  <div class="row"> <!-- row 1 --> 
+
+    <!-- nav bar thing-->
+    <nav class="navbar bg-body-tertiary position-relative">
+  <div class="container-fluid">
+
+    <!--Hamburger menu-->
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="offcanvas" 
+      data-bs-target="#offcanvasExample"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- center image -->
+    <img 
+      src="./assets/img/Logo.png"
+      class="position-absolute top-50 start-50 translate-middle"
+      alt="Stage Two Games"
+    >
+
+    <!-- dead button navigation pin -->
+    <button class="btn ms-auto p-0 border-0">
+      <i class="bi bi-geo-alt fs-1"></i>
+    </button>
+  </div>
+</nav>
+
+<!--nav section for mobile-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="nav-link fw-bold text-dark">
+
+      <li class="nav-item">
+        <a class="nav-link fw-bold text-dark" href="index.html">Home Page</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link fw-bold text-dark" href="aboutme.html">About Me</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link fw-bold text-dark" href="#">Event Calendar</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link fw-bold text-dark" href="#">FAQ Page</a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<!-- Front news picture.  -->
+
+
+  
+  
+  </div> <!-- row 1 -->
+  
+  <div class="row"> <!-- row 2 -->
+  <div class="news">
+  <img 
+  src="./assets/img/future_home."
+  alt="The future home of stage two games"
+  >
+ <h2> We’re moving. Coming in August </h2>
+
+  <h3>209 S 2nd Street Cabot, AR 72023 </h3>
+  </div> <!-- news -->
+  </div> <!-- row 2 -->
+
+  <div class ="row container"> <!-- row 3 -->
+    <div class="what_sell">
+
+
+      <div class="col-12">
+        <h1>What do we sell?</h1>
+      </div>
+      
+      <div class="row g-3"> <!-- g-3 = spacing between boxes -->
+
+    <div class="col-6">
+      <div class="card h-100 card-body">
+          <h5 class="card-title">Magic: The Gathering</h5>
+          <p class="card-text">Cards, packs, and events.</p>
+      </div>
+    </div>
+
+    <!-- Pokemon -->
+    <div class="col-6">
+      <div class="card h-100 card-body">
+          <h5 class="card-title">Pokemon</h5>
+          <p class="card-text">Cards, packs, and events.</p>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="card h-100 card-body">
+          <h5 class="card-title">Game consoles</h5>
+          <p class="card-text">Cards, packs, and events.</p>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="card h-100 card-body">
+          <h5 class="card-title">Gaming accessories</h5>
+          <p class="card-text">Cards, packs, and events.</p>
+      </div>
+    </div>
+      
+    </div>
+
+    </div> <!--what_sell-->
+  </div> <!-- row 3 -->
+
+ <div class="row container"> <!--row 4-->
+  <div class="we_buy text-center">
+    <h1>Have things you want to sell?</h1>
+
+    <img src="./assets/img/buying.jpg" class="img-fluid mb-3">
+
+    <a href="#faq" class="btn btn-primary">
+      Click here for FAQ
+    </a>
+    
+  </div> <!-- we buy -->
+</div><!--row 4-->
+
+  <div class="row"><!--row 5-->
+    <footer class="bg-white border-top mt-5">
+  <div class="container py-3">
+    <div class="row text-center">
+
+      <div class="col-6 col-md-3 mb-2">
+        <a href="#" class="btn btn-outline-dark w-100 py-3">
+          Home
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3 mb-2">
+        <a href="#" class="btn btn-outline-dark w-100 py-3">
+          FAQ
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3 mb-2">
+        <a href="#" class="btn btn-outline-dark w-100 py-3">
+          Owner
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3 mb-2">
+        <a href="#" class="btn btn-outline-dark w-100 py-3">
+          Events
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+  </div><!--row 5-->
+
+
+</div>
+
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

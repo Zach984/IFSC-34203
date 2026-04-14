@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* typical stuff */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Fix Clearing Bugs */
+
+img {
+  max-width: 100%;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.offcanvas .nav-link {
+  font-size: 1.4rem;     /* makes text bigger */
+  font-weight: 700;      /* bold */
+  padding: 18px 0;       /* THIS adds spacing + clickable area */
+}
+
+body {
+  background-color: #ead6f3;
+}
+
+.container {
+  background-color: white;
+}
+
+/* nav bar stuff */
+.navbar {
+  padding: 14px 16px;
+}
+
+.navbar img {
+  min-height: 60px;
+  height:40px
+}
+
+.navbar .navbar-toggler {
+  padding: 16px 20px;
+}
+
+.navbar i {
+  font-size: 20rem;
+} 
+
+/* news section */
+
+.news {
+  padding: 30px
+}
+
+/* what sell */
+
+.what_sell h1 {
+  font-family: "press Start 2P";
+}
+
+/* we buy  */
+.we_buy h1 {
+  font-family: "press Start 2P";
+  margin-top: 30px;
+}
+
+
