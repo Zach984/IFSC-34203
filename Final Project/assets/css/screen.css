@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Fix Clearing Bugs */
+
+img {
+  max-width: 100%;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+/* =========================
+   TOP NAV
+   ========================= */
+header {
+    height: 90px;
+    background-color: #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1000;
+}
+
+/* centered logo */
+header img {
+    height: 55px;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* shared button styling */
+.menu-button,
+.location-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hamburger button */
+.menu-button {
+    width: 72px;
+    height: 72px;
+    border: 1px solid #cfcfcf;
+    background-color: #efefef;
+    border-radius: 8px;
+}
+
+/* location button */
+.location-button {
+    width: 48px;
+    height: 48px;
+}
+
+/* icon styling */
+.material-symbols-outlined {
+    font-size: 36px;
+    color: #555;
+}
+
+/* =========================
+   SIDE MENU
+   ========================= */
+aside {
+    position: fixed;
+    top: 0;
+    left: -80%;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: #f8f8f8;
+    padding: 20px;
+    z-index: 2000;
+    transition: left 0.3s ease;
+}
+
+/* when menu is open */
+aside.active {
+    left: 0;
+}
+
+.side-menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.side-menu-top h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.close-button {
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: #777;
+    cursor: pointer;
+}
+
+.side-menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.side-menu-links a {
+    text-decoration: none;
+    color: #0d1b3d;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* =========================
+   OVERLAY
+   ========================= */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 1500;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =========================
+   MAIN
+   ========================= */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+    padding: 20px;
+}
