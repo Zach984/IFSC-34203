@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -29,9 +31,10 @@ img {
 }
 
 body {
-    background-color: #f3f3f3;
+    background-color: #d4c2e3;
     font-family: Arial, sans-serif;
     color: #111;
+
 }
 
 /* =========================
@@ -39,7 +42,7 @@ body {
    ========================= */
 header {
     height: 90px;
-    background-color: #e9e9e9;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -169,6 +172,55 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    gap: 16px;
-    padding: 20px;
+    gap: 20px;
+    margin: 20px auto;
+    
+}
+
+.frontPage {
+    grid-column: 1/3;
+    grid-row:1/2;
+    text-align: center;
+    font-family: "press Start 2P";
+}
+
+.frontPage h2{
+    margin-top: 5px;
+}
+
+.sellCards {
+    padding: 6px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap:16px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+.card img {
+    max-width:70%
+}
+
+.card h2{
+    min-height: 60px;
+}
+
+.card p {
+    margin-top: 8px;
 }
