@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-html {
-  box-sizing: border-box;
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x:hidden;
 }
 *,
 *:before,
@@ -34,7 +36,8 @@ body {
     background-color: #d4c2e3;
     font-family: Arial, sans-serif;
     color: #111;
-
+    margin: 0;
+    overflow-x: hidden;
 }
 
 /* =========================
@@ -43,21 +46,23 @@ body {
 header {
     height: 90px;
     background-color: #fff;
-    display: flex;
+    display: grid;
+    grid-template-columns: 72px 1fr 48px;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-    position: relative;
-    z-index: 1000;
+    gap: 8px;
+    padding: 0 12px;
+    width: 100%;
 }
+
 
 /* centered logo */
 header img {
-    height: 55px;
-    width: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
+    justify-self: center;
+    height: 45px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 /* shared button styling */
@@ -173,8 +178,9 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 20px;
-    margin: 20px auto;
-    
+    margin: 20px 0;
+    width:100%;
+
 }
 
 /* =========================
@@ -197,14 +203,14 @@ main {
    ========================= */
 
 .sellCards {
-    padding: 6px;
+    padding: 20px;
     grid-column: 1/3;
-    grid-row: 2/3;
 
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* the minmax lets the screen shrink instead of over flowing the page according to chatgpt (i couldn't fix the overflow)*/
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto;
-    gap:16px;
+    gap:8px;
     
 }
 
