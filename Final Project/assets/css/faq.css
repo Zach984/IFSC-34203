@@ -22,12 +22,13 @@
 }
 
 .faqItem{
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #4b3fd1;
     padding: 16px 0;
+    margin: 10px;
 }
 
 .faqItem summary {
-    color: #fff;
+    color: #4b3fd1;
     font-size: 1.4rem;
     cursor: pointer;
     list-style: none;
@@ -49,11 +50,68 @@
 .faqItem p {
     margin-top: 12px;
     padding-left: 34px;
-    color: #111;
+    color: #2f2f2f;
     font-size: 1rem;
     line-height: 1.5;
 }
 
-.faq-item[open] summary::before {
-    content: "-";
+
+@media screen and (min-width: 1024px) {
+
+
+.faqItem p {
+    padding-right: 60px;
+}
+
+
+}
+
+/* whenever top picture breaks */ 
+@media screen and (min-width: 1200px) {
+
+.topPicture {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+    height: 300px;
+    overflow:hidden;
+}
+
+.topPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* crops instead of squeezing */
+    object-position: center;
+    display: block;
+}
+
+.faqItem p {
+    padding-right: 120px;
+}
+
+}
+
+/*more small tweaks to picture*/
+@media screen and (min-width: 1920px) {
+
+.topPicture {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+    height: 320px;
+    overflow:hidden;
+}
+
+.topPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* crops instead of squeezing */
+    object-position: center;
+    display: block;
+}
+
+.faqItem p {
+    padding-right: 240px;
+}
+
 }
