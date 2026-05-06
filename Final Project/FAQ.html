@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stage 2 Games</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./assets/css/screen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stage 2 Games Website.">
+    <meta name="author" content="Zachary Smith" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+    <!-- hamburger menu button. -->
+    <button class="menu-button" id="menuOpen" aria-label="Open menu"><span class="material-symbols-outlined">menu</span></button>
+    
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="calendar.html">Events</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <!--the logo-->
+    <img src="./assets/img/logo.png" alt="Stage 2 Games" />
+    
+    <!--map button-->
+    <button class="location-button" id="location" aria-label="Location"><span class="material-symbols-outlined">location_on</span></button>
+</header>
+
+<!--The slide menu thing-->
+<aside>
+    <div class="side-menu-top">
+        <h2>Menu</h2>
+        <button class="close-button" id="menuClose" aria-label="Close Menu">&times;</button>
+    </div>
+
+    <nav class="side-menu-links">
+        <a href="index.html">Hope Page</a>
+        <a href="about.html">About Me</a>
+        <a href="calendar.html">Event Calendar</a>
+        <a href="faq.html">FAQ Page</a>
+    </nav>
+</aside>
+
+  <!-- Dark overlay -->
+
+<div class="overlay" id="overlay"></div>
+
+
+
+<script src="./assets/js/aside.js"></script>
+</body>
+</html>
