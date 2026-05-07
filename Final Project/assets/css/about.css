@@ -54,7 +54,7 @@ article p {
     }
 
     article p {
-        font-size: x-large;
+        font-size: large;
     
 }
 }
@@ -74,4 +74,9 @@ article p {
     article {
         max-width: 700px;
     }
+
+    article p {
+        font-size: x-large;
+    
+}
 }
