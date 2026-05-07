@@ -23,3 +23,46 @@ article p {
     background-color: #fff;
 }
 
+@media screen and (min-width: 750px) {
+
+    .ownerPicture{
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 24px;
+
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .ownerPicture {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        justify-self: center;
+        padding: 0;
+    }
+
+    .ownerPicture img {
+        display: block;
+        width: 100%;
+        max-width: 550px;
+    }
+
+    article {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        max-width: 600px;
+        justify-self: center;
+    }
+
+    article p {
+        line-height: 1.6;
+        padding: 16px;
+    }
+}
