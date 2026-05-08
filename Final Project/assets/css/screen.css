@@ -312,6 +312,8 @@ main {
     text-align: center;
     background-color: #fff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+    color: inherit;
+    text-decoration: none;
 }
 
 .card img {
@@ -323,10 +325,14 @@ main {
 .card h2{
     min-height: 60px;
     font-size:large;
+    color: inherit;
+    text-decoration: none;
 }
 
 .card p {
     margin-top: 8px;
+    color: inherit;
+    text-decoration: none;
 }
 
 /* =========================
@@ -436,6 +442,8 @@ footer .copyRight {
 
     .card {
         height: 300px;
+        color: inherit;
+        text-decoration: none;
     }
 
     .card img {
@@ -504,6 +512,7 @@ footer .copyRight {
     .location-button {
         justify-self: end;
         margin-left: 0;
+        text-decoration: none;
     }
 
     .heroSlider {
@@ -541,6 +550,8 @@ footer .copyRight {
 
     .card {
         height: 400px;
+        color: inherit;
+        text-decoration: none;
     }
 
     .card img {
@@ -552,10 +563,14 @@ footer .copyRight {
     .card h2 {
         font-size: x-large;
         min-height: 20px;
+        color: inherit;
+        text-decoration: none;
     }
 
     .card p{
         font-size: x-large;
+        color: inherit;
+        text-decoration: none;
     }
 
 }
@@ -564,6 +579,31 @@ footer .copyRight {
 
     .desktop-nav{
         font-size: large;
+    }
+
+    .card {
+        height: 400px;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .card img {
+        width: 70%;
+        height: 220px;
+        object-fit: contain;
+}
+
+    .card h2 {
+        font-size: x-large;
+        min-height: 20px;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .card p{
+        font-size: x-large;
+        color: inherit;
+        text-decoration: none;
     }
 
 }
