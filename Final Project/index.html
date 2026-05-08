@@ -58,15 +58,29 @@
 
 <div class="frontPage">
 
-    <img
-    src="./assets/img/storeFront.png"
-    alt="store front picture"
-    >
+     <div class="heroSlider">
+        <button class="slideButton prevButton" id="prevSlide" aria-label="Previous image">
+            &#10094;
+        </button>
 
-    <h2>The Place to Game</h2>
+        <img
+        id="heroImage"
+        src="./assets/img/storeFront2.jpg"
+        alt="Stage 2 Games storefront"
+        >
+
+        <button class="slideButton nextButton" id="nextSlide" aria-label="Next image">
+            &#10095;
+        </button>
+    </div>
+
 </div>
 
 <div class="sellCards">
+
+    <div class="productsTitle">
+        <h2>Products and Services</h2>
+    </div>
 
     <article class="card">
         <h2>Magic: The Gathering</h2>
@@ -134,7 +148,7 @@
     </div>
 
     <div class="faqbut">
-    <a href="faq.html" class="button">How Our Buying Works</a>
+    <a href="FAQ.html" class="button">How Our Buying Works</a>
     </div>
 </div>
 
@@ -172,6 +186,7 @@
     </div>
 </footer>
 
+<script src="./assets/js/slideshow.js"></script>
 <script src="./assets/js/aside.js"></script>
 </body>
 </html>
